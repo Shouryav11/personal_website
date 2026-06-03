@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% block title %}Contact{% endblock %}
+{% block content %}
+<section class="contact-hero">
+  <div class="contact-box">
+    <span class="contact-iwas">I WAS</span>
+  </div>
+  <div class="contact-row">
+    <img src="{{ url_for('static', filename='contact-left.jpg') }}" alt="red girl" class="contact-img">
+    <span class="contact-created">CREATED</span>
+    <img src="{{ url_for('static', filename='contact-right.jpg') }}" alt="tiger" class="contact-img">
+  </div>
+  <div class="contact-tocreate">TO CREATE</div>
+</section>
+{% endblock %}

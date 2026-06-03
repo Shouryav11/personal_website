@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+{% block title %}About Me - shourya vemula{% endblock %}
+{% block content %}
+<section class="skills-gallery">
+  <div class="skills-collage">
+    <img src="{{ url_for('static', filename='skill1.jpg') }}" alt="Skill 1" class="skill-img img-1">
+    <img src="{{ url_for('static', filename='skill2.jpg') }}" alt="Skill 2" class="skill-img img-2">
+    <img src="{{ url_for('static', filename='skill3.jpg') }}" alt="Skill 3" class="skill-img img-3">
+    <img src="{{ url_for('static', filename='skill4.jpg') }}" alt="Skill 4" class="skill-img img-4">
+    <img src="{{ url_for('static', filename='skill5.jpg') }}" alt="Skill 5" class="skill-img img-5">
+    <img src="{{ url_for('static', filename='skill6.jpg') }}" alt="Skill 6" class="skill-img img-6">
+</div>
+  <section class="skills-desc">
+    <!--<img src="{{ url_for('static', filename='images/bg-about.jpeg') }}" alt="Shourya_Vemula" class="media"> -->
+    <h1 id="srv-skills">My Skills </h1>
+    <h3>Web Development</h3>
+    <p>I started my journey in programming through Harvard’s CS50x – Introduction to Computer Science, which gave me a strong base in algorithms, problem-solving, and computer science principles. Over time, I specialized in building responsive and user-friendly websites with:<br>
+
+💻Frontend: HTML, CSS, JavaScript<br>
+
+💻Backend: Flask (Python-based)<br>
+
+💻Programming logic: C<br>
+
+I enjoy bringing ideas to life on the web, whether it’s a clean portfolio site, a data-driven dashboard, or interactive tools.</p>
+    <h3>Graphic Design</h3>
+    <p>Design is my way of communicating visually. I create graphics that not only look appealing but also deliver messages effectively. My design expertise includes:<br>
+
+🎨Brand Identity: Logo design, brand kits<br>
+
+🎨Content Creation: Thumbnails, posters, book covers<br>
+
+🎨Professional Assets: Presentations, infographics<br>
+
+I approach every design with creativity and clarity, making sure it aligns with the purpose and audience.
+</p>
+</section>
+<section>
+    <h3>Data Science & Machine Learning</h3>
+    <p>I believe data tells stories, and I use my analytical skills to uncover them. My data science toolkit includes:<br>
+
+📊Python libraries: pandas, NumPy, scikit-learn, matplotlib, seaborn<br>
+
+📊Databases: SQL for querying and managing structured data<br>
+
+📊Visualization & Reporting: Excel, Tableau, Power BI<br>
+
+From cleaning and analyzing datasets to building predictive models, I work on projects that help simplify decision-making and turn raw numbers into valuable insights.</p>
+    <h3>Mechatronics</h3>
+    <p>Being a mechatronics student, I focus on integrating mechanics, electronics, and design. My experience includes:<br>
+
+🤖Design & CAD: Fusion 360, AutoCAD<br>
+
+🤖Prototyping: Arduino Uno microcontrollers<br>
+
+🤖Core subjects: Engineering materials, EV concepts, theory of mechanics<br>
+
+I enjoy building systems that connect hardware and software — whether it’s small prototypes, engineering mini-projects, or futuristic concepts like electric vehicles.<br>
+My journey is all about learning, creating, and innovating.</p>
+     <h3>Soft Skills</h3>
+     <p>Technical skills are powerful, but soft skills make them impactful. Through projects, teamwork, and personal experiences, I’ve built strengths in:<br>
+
+🧩Effective communication – conveying ideas clearly<br>
+
+🧩Time management – balancing multiple tasks efficiently<br>
+
+🧩Adaptability – learning and adjusting quickly<br>
+
+🧩Teamwork & leadership – collaborating and guiding when needed<br>
+
+These skills help me not just work on projects, but also grow with people.</p>
+    <h3>Other Pursuits</h3>
+    <p>I believe in being an all-rounder. Outside of academics and professional work, I actively pursue:<br>
+
+⚡Sports: Football, basketball, handball, volleyball, athletics (100m sprint)<br>
+
+⚡Mind & Strategy: Chess<br>
+
+⚡Exploration: Traveling to new places and learning from experiences<br>
+
+⚡Personal growth: Staying a continuous learner, curious about new technologies, cultures, and ideas.</p>
+</section>
+{% endblock %}

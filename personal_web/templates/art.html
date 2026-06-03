@@ -1,0 +1,63 @@
+{% extends "base.html" %}
+{% block title %}My Art {% endblock %}
+{% block content %}
+<section class="art-section">
+  <div class="art-title-box">
+    <h1 class="art-title">MY GALLERY</h1>
+    <span class="art-page-num"></span>
+  </div>
+  <div class="art-gallery">
+    <div class="art-item">
+      <img src="{{ url_for('static', filename='art1.jpg') }}" alt="Pantone_coy_logo" class="art-img">
+      <h2 class="art-caption-title">Pantone Brand Logo
+      </h2>
+      <p class="art-caption-desc">CREATED FOR THE WILLOWPANES AND USED BY ASIAN TOUR</p>
+    </div>
+    <div class="art-item">
+      <img src="{{ url_for('static', filename='art2.jpg') }}" alt="Techno party" class="art-img">
+      <h2 class="art-caption-title">Techno Party Invite</h2>
+      <p class="art-caption-desc">A POSTER SAMPLE FROM A DESIGN COMPETITION IN 2024</p>
+    </div>
+    <div class="art-item">
+      <img src="{{ url_for('static', filename='art3.jpg') }}" alt="Adoboro" class="art-img">
+      <h2 class="art-caption-title">Adoboro Company</h2>
+      <p class="art-caption-desc">STREET ART IN A SKATE PARK, LOCATED IN WHELTON CITY CENTER</p>
+    </div>
+    <div class="art-item">
+      <img src="{{ url_for('static', filename='art4.jpg') }}" alt="brazil" class="art-img">
+      <h2 class="art-caption-title">Legacy of Brazil</h2>
+      <p class="art-caption-desc">Feel the magic in the air.</p>
+    </div>
+        <div class="art-item">
+      <img src="{{ url_for('static', filename='art5.jpg') }}" alt="BE" class="art-img">
+      <h2 class="art-caption-title">Logo BE</h2>
+      <p class="art-caption-desc">A proffessional brand logo for famous company.</p>
+  </div>
+      <div class="art-item">
+      <img src="{{ url_for('static', filename='art6.jpg') }}" alt="Issusion" class="art-img">
+      <h2 class="art-caption-title">Geometry Iillusion</h2>
+      <p class="art-caption-desc">Abstract, minimal, dark.</p>
+</div>
+      <div class="art-item">
+      <img src="{{ url_for('static', filename='art7.jpg') }}" alt="farwell" class="art-img">
+      <h2 class="art-caption-title">invitation to Farewell Party</h2>
+      <p class="art-caption-desc">A college work for seniors.</p>
+</div>
+        <div class="art-item">
+        <img src="{{ url_for('static', filename='art8.jpg') }}" alt="beleive" class="art-img">
+        <h2 class="art-caption-title">Motivational Poster</h2>
+        <p class="art-caption-desc">A poster for a inspiration.</p>
+</div>
+        <div class="art-item">
+        <img src="{{ url_for('static', filename='art9.jpg') }}" alt="Holi" class="art-img">
+        <h2 class="art-caption-title">Festival Poster</h2>
+        <p class="art-caption-desc">A poster for holi festival again a college work.</p>
+</div>
+        <div class="art-item">
+      <img src="{{ url_for('static', filename='art10.jpg') }}" alt="self motivation" class="art-img">
+      <h2 class="art-caption-title">Legacy of Lion</h2>
+      <p class="art-caption-desc">Feel the power inside you.</p>
+  </div>
+        </div>
+</section>
+{% endblock %}

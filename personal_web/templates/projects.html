@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block title %}Projects {% endblock %}
+{% block content %}
+<h1 class="projects-header">MY PROJECTS</h1>
+<section class="projects-gallery">
+
+  <div class="project-item">
+    <div class="project-images">
+      <img src="{{ url_for('static', filename='project1a.png') }}" alt="Project 1a" class="proj-img proj-tilt-1">
+      <img src="{{ url_for('static', filename='project1b.png') }}" alt="Project 1b" class="proj-img proj-tilt-2">
+    </div>
+    <div class="project-info">
+      <h3>Project 1 : Fusion 360</h3>
+      <p> LEGO-Style Brick<br>
+
+This is a simple LEGO-like brick model with six studs on top. It teaches basics of sketching, extrusion, and patterning in Fusion 360. The design highlights accuracy since interlocking depends on precise dimensions. It’s useful for toy design, prototyping, and CAD learning. Beginners often use this to practice parametric modeling. The model shows how simple geometry can create complex assemblies. It’s a fun way to start learning 3D modeling.
+
+<br>Mechanical Mounting Bracket<br>
+
+This is a support bracket with a base, raised section, and a circular hole. It’s designed for holding shafts, rods, or bolts in mechanical systems. The project involves extrusions, cuts, and hole features. It’s common in machines, robotics, and fixtures. Students learn about functionality and manufacturability. The bracket shows how CAD translates into real engineering parts. It’s practical, professional, and industry-relevant.</p>
+    </div>
+  </div>
+
+  <div class="project-item">
+    <div class="project-images">
+      <img src="{{ url_for('static', filename='project2a.png') }}" alt="Project 2a" class="proj-img proj-tilt-3">
+      <img src="{{ url_for('static', filename='project2b.png') }}" alt="Project 2b" class="proj-img proj-tilt-4">
+    </div>
+    <div class="project-info">
+      <h3>Project 2 Data Science</h3>
+      <p>Sales Analysis Report<br>
+
+This report provides insights into overall sales performance by analyzing trends, customer behavior, and product demand. The data was cleaned and visualized using SQL, Pandas, NumPy, Matplotlib, and Power BI. Key metrics such as total sales, revenue growth, top-performing products, and customer segments were identified. Seasonal patterns and sales peaks were highlighted to guide business decisions. The analysis also includes comparisons of monthly/quarterly sales to spot growth opportunities. Insights gained help businesses optimize marketing strategies, improve inventory planning, and boost profits. Overall, the report translates raw data into actionable insights for decision-making.</p>
+    </div>
+  </div>
+
+  <div class="project-item">
+    <div class="project-images">
+      <img src="{{ url_for('static', filename='project3a.png') }}" alt="Project 3a" class="proj-img proj-tilt-2">
+      <img src="{{ url_for('static', filename='project3b.png') }}" alt="Project 3b" class="proj-img proj-tilt-1">
+    </div>
+    <div class="project-info">
+      <h3>Project 3 Gen Ai</h3>
+      <p>GenAI Chatbot Project<br>
+
+I developed a command-line AI chatbot during my Generative AI class. The project uses the BoltIoT OpenAI wrapper to connect with the OpenAI Chat Completions API. It authenticates the API key through environment variables and guides users if the key is not set up. Once running, the chatbot accepts user questions, sends them to the model, and displays AI-generated responses in real time. The system runs in a loop, enabling continuous interaction like a personal assistant. This project helped me understand how to integrate GenAI models into Python applications and work with APIs, authentication, and response handling. It was a practical introduction to building intelligent assistants using Generative AI.</p>
+    </div>
+  </div>
+
+  <div class="project-item">
+    <div class="project-images">
+      <img src="{{ url_for('static', filename='project4a.jpg') }}" alt="Project 4a" class="proj-img proj-tilt-4">
+      <img src="{{ url_for('static', filename='project4b.jpg') }}" alt="Project 4b" class="proj-img proj-tilt-3">
+    </div>
+    <div class="project-info">
+      <h3>Project 4 Title</h3>
+      <p>Short description of project 4 with details.</p>
+    </div>
+  </div>
+
+</section>
+{% endblock %}
